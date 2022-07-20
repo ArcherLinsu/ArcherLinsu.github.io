@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="旷野之息的一些材料效果整理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《塞尔达传说：旷野之息》基础手册">
+<meta property="og:url" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/index.html">
+<meta property="og:site_name" content="Linsu&#39;s Blog">
+<meta property="og:description" content="旷野之息的一些材料效果整理">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B%EF%BC%88%E9%AA%91%E9%A9%AC%EF%BC%89.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B%EF%BC%88%E5%B0%84%E7%AE%AD%EF%BC%89.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B(%E6%97%B6%E4%B9%8B%E7%AC%9B).jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B(%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%89%91).jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B(%E9%AD%94%E5%90%89%E6%8B%89%E7%9A%84%E9%9D%A2%E5%85%B7).jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B%EF%BC%88%E5%88%9D%E4%BB%A38-Bit%EF%BC%89.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B%EF%BC%88%E5%A4%A7%E4%B9%B1%E6%96%97%EF%BC%89.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B%EF%BC%88%E9%BB%84%E6%98%8F%E5%85%AC%E4%B8%BB%EF%BC%89.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%8D%A1%E9%80%9A%E6%9E%97%E5%85%8B%EF%BC%88%E5%A4%A7%E4%B9%B1%E6%96%97%EF%BC%89.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%8D%A1%E9%80%9A%E6%9E%97%E5%85%8B%EF%BC%88%E9%A3%8E%E4%B9%8B%E5%BE%8B%E5%8A%A8%EF%BC%89.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%B9%BC%E5%B9%B4%E6%9E%97%E5%85%8B%EF%BC%88%E5%A4%A7%E4%B9%B1%E6%96%97%EF%BC%89.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%8D%A1%E9%80%9A%E6%9E%97%E5%85%8B%EF%BC%88%E7%BB%87%E6%A2%A6%E5%B2%9B%EF%BC%89.png">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%A1%9E%E5%B0%94%E8%BE%BE.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%A1%9E%E5%B0%94%E8%BE%BE(%E5%A4%A7%E4%B9%B1%E6%96%97).jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%A1%9E%E5%B0%94%E8%BE%BE(%E9%A3%8E%E4%B9%8B%E5%BE%8B%E5%8A%A8).jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%AE%88%E6%8A%A4%E8%80%85.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%B3%A2%E5%85%8B%E5%B8%83%E6%9E%97.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E7%B1%B3%E6%B3%95.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%8A%9B%E5%B7%B4%E5%B0%94.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E4%B9%8C%E5%B0%94%E6%B3%A2%E6%9C%AD.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E8%BE%BE%E5%B0%94%E5%85%8B%E5%B0%94.jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%8A%A0%E4%BE%AC%E5%A4%9A%E5%A4%AB(%E5%A4%A7%E4%B9%B1%E6%96%97).jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%B8%8C%E5%85%8B(%E5%A4%A7%E4%B9%B1%E6%96%97).jpg">
+<meta property="og:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B%E7%8B%BC.jpg">
+<meta property="article:published_time" content="2019-07-06T06:36:00.000Z">
+<meta property="article:modified_time" content="2022-07-20T14:29:19.561Z">
+<meta property="article:author" content="林苏">
+<meta property="article:tag" content="游戏攻略">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B%EF%BC%88%E9%AA%91%E9%A9%AC%EF%BC%89.jpg">
+
+<link rel="canonical" href="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>《塞尔达传说：旷野之息》基础手册 | Linsu's Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Linsu's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">技术是一种态度</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/tx.jpg">
+      <meta itemprop="name" content="林苏">
+      <meta itemprop="description" content="胡言乱语">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Linsu's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          《塞尔达传说：旷野之息》基础手册
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-07-06 14:36:00" itemprop="dateCreated datePublished" datetime="2019-07-06T14:36:00+08:00">2019-07-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9D%82%E8%B0%88/" itemprop="url" rel="index"><span itemprop="name">杂谈</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9D%82%E8%B0%88/%E6%B8%B8%E6%88%8F%E6%94%BB%E7%95%A5/" itemprop="url" rel="index"><span itemprop="name">游戏攻略</span></a>
+                </span>
+            </span>
+
+          
+            <div class="post-description">旷野之息的一些材料效果整理</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="1、基础知识"><a href="#1、基础知识" class="headerlink" title="1、基础知识"></a>1、基础知识</h2><ul>
+<li>1红心=5HP；</li>
+<li>伤害=攻击力-护甲值；</li>
+<li>烹饪存在暴击，血月出现前后的一段时间内必定暴击；</li>
+<li>烹饪时材料的效果进行累加，但部分延长时效的材料使用多个相同的材料会降低效果（从第二个开始只延长30秒）；</li>
+<li>标准图鉴（研究所出售）不能覆盖自己拍摄的图鉴，所以想要收集标准图鉴的话，不要自己拍摄；</li>
+<li>下雨天=2级静谧；</li>
+<li>一种食物/药剂，只能同时存在一种Buff；需要注意的是使用不同的食物/药剂时，Buff的种类和时效是覆盖的而不是累加；</li>
+</ul>
+<h2 id="2、材料"><a href="#2、材料" class="headerlink" title="2、材料"></a>2、材料</h2><h3 id="材料前缀说明"><a href="#材料前缀说明" class="headerlink" title="材料前缀说明"></a>材料前缀说明</h3><ul>
+<li><strong>大剑：</strong>提升攻击力</li>
+<li><strong>铠甲：</strong>提升防御力</li>
+<li><strong>潜行/静谧/静静：</strong>提高安静性</li>
+<li><strong>速速：</strong>提高跑步/攀爬/游泳速度</li>
+<li><strong>生命：</strong>血量全部恢复并额外增加黄心</li>
+<li><strong>精力/毅力：</strong>恢复体力</li>
+</ul>
+<h3 id="烹饪暴击"><a href="#烹饪暴击" class="headerlink" title="烹饪暴击"></a>烹饪暴击</h3><p>在林克烹饪时，会有极小概率触发烹饪暴击，会随机出现以下不同增幅：</p>
+<ul>
+<li><p>多恢复三颗红心；</p>
+</li>
+<li><p>多增加一颗黄心；</p>
+</li>
+<li><p>多恢复40%精力；</p>
+</li>
+<li><p>多增加40%精力上限；</p>
+</li>
+<li><p>Buff等级提升1；</p>
+</li>
+<li><p>Buff时效增加5分钟；</p>
+</li>
+</ul>
+<h3 id="食物-药剂等级表"><a href="#食物-药剂等级表" class="headerlink" title="食物/药剂等级表"></a>食物/药剂等级表</h3><table>
+<thead>
+<tr>
+<th align="center">种类</th>
+<th align="center">1级升2级阈值</th>
+<th align="center">2级升3级阈值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">攻击</td>
+<td align="center">5</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">防御</td>
+<td align="center">5</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">速度</td>
+<td align="center">5</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td align="center">潜行</td>
+<td align="center">6</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">耐电</td>
+<td align="center">4</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">耐热</td>
+<td align="center">6</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td align="center">耐寒</td>
+<td align="center">6</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td align="center">耐火</td>
+<td align="center">7</td>
+<td align="center">无</td>
+</tr>
+</tbody></table>
+<h3 id="普通材料"><a href="#普通材料" class="headerlink" title="普通材料"></a>普通材料</h3><p>只用普通材料进行烹饪，有恢复血量和延长Buff时效的效果（30秒）。</p>
+<table>
+<thead>
+<tr>
+<th align="center">材料名称</th>
+<th align="center">材料效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">顶级/高级/普通兽肉</td>
+<td align="center">4/3/2红心</td>
+</tr>
+<tr>
+<td align="center">顶级/高级/普通禽肉</td>
+<td align="center">4/3/2红心</td>
+</tr>
+<tr>
+<td align="center">海拉鲁鲈鱼</td>
+<td align="center">2红心</td>
+</tr>
+<tr>
+<td align="center">海拉鲁草</td>
+<td align="center">2红心</td>
+</tr>
+<tr>
+<td align="center">海拉鲁蘑菇</td>
+<td align="center">1红心</td>
+</tr>
+<tr>
+<td align="center">苹果</td>
+<td align="center">1红心</td>
+</tr>
+<tr>
+<td align="center">草莓</td>
+<td align="center">1红心</td>
+</tr>
+<tr>
+<td align="center">椰子</td>
+<td align="center">1红心</td>
+</tr>
+</tbody></table>
+<h4 id="佐料类"><a href="#佐料类" class="headerlink" title="佐料类"></a>佐料类</h4><p>佐料类材料主要用于延长食物类Buff的时效，但需要注意的是加入一个佐料后，后续重复的佐料都只能延长30秒。</p>
+<table>
+<thead>
+<tr>
+<th align="center">材料名称</th>
+<th align="center">材料效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">小鸟的树果</td>
+<td align="center">延长40秒</td>
+</tr>
+<tr>
+<td align="center">橡子</td>
+<td align="center">延长50秒</td>
+</tr>
+<tr>
+<td align="center">海拉鲁米、塔邦挞小麦、岩盐</td>
+<td align="center">延长60秒</td>
+</tr>
+<tr>
+<td align="center">山羊黄油、鲜奶、蔗糖</td>
+<td align="center">延长80秒</td>
+</tr>
+<tr>
+<td align="center">鼓隆的调味粉、禽蛋</td>
+<td align="center">延长90秒</td>
+</tr>
+</tbody></table>
+<h4 id="Buff类"><a href="#Buff类" class="headerlink" title="Buff类"></a>Buff类</h4><table>
+<thead>
+<tr>
+<th align="center">材料等级</th>
+<th align="center">攻击类（50秒）</th>
+<th align="center">防御类（50秒）</th>
+<th align="center">速度类（60秒）</th>
+<th align="center">潜行类（120秒）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">大剑草/独角仙</td>
+<td align="center">铠甲草/独角仙</td>
+<td align="center">速速蜥/蘑菇/胡萝卜</td>
+<td align="center">潜行草/田螺、静静萤火虫</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">大剑香蕉/蘑菇/鲤鱼/螃蟹</td>
+<td align="center">铠甲南瓜/蘑菇/鲤鱼/螃蟹</td>
+<td align="center">速速蛙/莲蓬/紫罗兰</td>
+<td align="center">潜行鳟鱼/蘑菇</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">大剑鲷鱼</td>
+<td align="center">铠甲鲷鱼</td>
+<td align="center"></td>
+<td align="center">静谧公主</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">材料等级</th>
+<th align="center">耐热(150秒)</th>
+<th align="center">耐寒(150秒)</th>
+<th align="center">耐火(150秒)</th>
+<th align="center">耐电(150秒)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">冰冷蜜瓜/香草/凤蝶</td>
+<td align="center">暖暖草果/凤蝶</td>
+<td align="center">防火蜥</td>
+<td align="center">酥麻水果/香草/凤蝶</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">冰冷蘑菇/蜻蜓</td>
+<td align="center">暖暖蘑菇/蜻蜓</td>
+<td align="center">防火凤蝶</td>
+<td align="center">酥麻蘑菇/蜻蜓</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">冰冷鳟鱼</td>
+<td align="center">暖暖鳟鱼</td>
+<td align="center"></td>
+<td align="center">酥麻鳟鱼</td>
+</tr>
+</tbody></table>
+<h4 id="生命类"><a href="#生命类" class="headerlink" title="生命类"></a>生命类</h4><p>生命类材料用来烹饪，可以增加黄心（血量上限）并完全恢复红心。</p>
+<table>
+<thead>
+<tr>
+<th align="center">材料等级</th>
+<th align="center">材料名称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">生命松露</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">生命鲈鱼、鲑鱼</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">生命蜥/海螺/小萝卜</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">生命榴莲/三文鱼、大颗生命松露</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">生命大萝卜</td>
+</tr>
+</tbody></table>
+<h4 id="精力类"><a href="#精力类" class="headerlink" title="精力类"></a>精力类</h4><p>精力类材料可以恢复体力值，高等级可以增加体力上限并完全恢复体力。</p>
+<table>
+<thead>
+<tr>
+<th align="center">材料等级</th>
+<th align="center">材料名称</th>
+<th align="center">1个</th>
+<th align="center">2个</th>
+<th align="center">3个</th>
+<th align="center">4个</th>
+<th align="center">5个</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">精力蘑菇/蚱蜢</td>
+<td align="center">20%</td>
+<td align="center">40%</td>
+<td align="center">80%</td>
+<td align="center">100%</td>
+<td align="center">140%</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">精力螃蟹、精力蜂的蜂蜜</td>
+<td align="center">40%</td>
+<td align="center">100%</td>
+<td align="center">160%</td>
+<td align="center">220%</td>
+<td align="center">280%</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">精力鲈鱼/独角仙</td>
+<td align="center">100%</td>
+<td align="center">220%</td>
+<td align="center">300%</td>
+<td align="center">300%</td>
+<td align="center">300%</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">毅力蛙/蘑菇</td>
+<td align="center">20%上限</td>
+<td align="center">40%上限</td>
+<td align="center">60%上限</td>
+<td align="center">80%上限</td>
+<td align="center">100%上限</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">毅力胡萝卜</td>
+<td align="center">40%上限</td>
+<td align="center">80%上限</td>
+<td align="center">120%上限</td>
+<td align="center">160%上限</td>
+<td align="center">200%上限</td>
+</tr>
+</tbody></table>
+<h3 id="怪物材料"><a href="#怪物材料" class="headerlink" title="怪物材料"></a>怪物材料</h3><p>怪物材料主要用于制作药剂和延长buff时效，材料的前缀不影响效果；</p>
+<table>
+<thead>
+<tr>
+<th align="center">材料等级</th>
+<th align="center">材料名称（后缀）</th>
+<th align="center">材料效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">莫力布林/蜥蜴战士/波克布林/莱尼尔的<strong>犄角</strong>、西诺克斯的<strong>爪子</strong>、八爪怪的<strong>脚/触手/气球</strong>、蝙蝠的翅膀、古代弹簧/螺丝、丘丘胶</td>
+<td align="center">延长70秒</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">莫力布林/蜥蜴战士/波克布林的<strong>牙齿</strong>、八爪怪的眼珠、莫德拉吉克的背鳍、莱尼尔的蹄子、元素蝙蝠的翅膀、元素丘丘胶、古代传动轴/齿轮</td>
+<td align="center">延长110秒</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">莫力布林/莫德拉吉克/波克布林/西诺克斯/莱尼尔的<strong>肝脏</strong>、蝙蝠的眼珠、蜥蜴战士的尾巴、古代核心、巨大的古代核心</td>
+<td align="center">延长190秒</td>
+</tr>
+</tbody></table>
+<h3 id="特殊材料"><a href="#特殊材料" class="headerlink" title="特殊材料"></a>特殊材料</h3><p>特殊材料主要延长Buff时效，但需要注意的是加入一个后，后续重复的材料都只能延长30秒，且可以100%触发烹饪暴击。</p>
+<table>
+<thead>
+<tr>
+<th align="center">材料名称</th>
+<th align="center">材料效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">星星碎片、龙鳞</td>
+<td align="center">延长90秒</td>
+</tr>
+<tr>
+<td align="center">龙爪</td>
+<td align="center">延长210秒</td>
+</tr>
+<tr>
+<td align="center">龙牙</td>
+<td align="center">延长630秒</td>
+</tr>
+<tr>
+<td align="center">龙角</td>
+<td align="center">延长30分钟</td>
+</tr>
+<tr>
+<td align="center">怪物精华</td>
+<td align="center">随机延长1/10/30分钟；随机提升Buff等级；</td>
+</tr>
+<tr>
+<td align="center">精灵</td>
+<td align="center">增加5颗红心恢复</td>
+</tr>
+</tbody></table>
+<h2 id="3、常用食谱"><a href="#3、常用食谱" class="headerlink" title="3、常用食谱"></a>3、常用食谱</h2><table>
+<thead>
+<tr>
+<th align="center">材料</th>
+<th align="center">物品</th>
+<th align="center">价钱</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h2 id="4、Amiibo"><a href="#4、Amiibo" class="headerlink" title="4、Amiibo"></a>4、Amiibo</h2><p>Amiibo 掉落素材都是普通、稀有随机出的，加粗的都是限定物品，也就是只能靠Amiibo刷出来。</p>
+<h3 id="林克（骑马）"><a href="#林克（骑马）" class="headerlink" title="林克（骑马）"></a>林克（骑马）</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B%EF%BC%88%E9%AA%91%E9%A9%AC%EF%BC%89.jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">海拉鲁/精力/冰冷/暖暖/酥麻/速速/大剑/铠甲/潜行蘑菇</td>
+<td align="center">毅力蘑菇、生命松露、大生命松露、箭矢*5</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、旅人/士兵之剑</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵之剑</td>
+<td align="center">骑士之剑、<strong>旅人缰绳</strong>、<strong>旅人马鞍</strong></td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵之剑</td>
+<td align="center">骑士之剑、王族之剑、月光匕首、<strong>旅人缰绳</strong>、<strong>旅人马鞍</strong></td>
+</tr>
+</tbody></table>
+<h3 id="林克（射箭）"><a href="#林克（射箭）" class="headerlink" title="林克（射箭）"></a>林克（射箭）</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B%EF%BC%88%E5%B0%84%E7%AE%AD%EF%BC%89.jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">海拉鲁/精力鲈鱼、冰冷/暖暖/酥麻/潜行鳟鱼、大剑/铠甲鲤鱼、大剑/铠甲鲷鱼、普通/高级禽肉、普通/高级兽肉</td>
+<td align="center">生命鲈鱼/鲑鱼、箭矢*5</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、旅人/士兵之弓</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵之弓</td>
+<td align="center">骑士之弓</td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵之弓</td>
+<td align="center">骑士之弓、王族之弓、游隼弓</td>
+</tr>
+</tbody></table>
+<h3 id="林克（时之笛）"><a href="#林克（时之笛）" class="headerlink" title="林克（时之笛）"></a>林克（时之笛）</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B(%E6%97%B6%E4%B9%8B%E7%AC%9B).jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">普通/高级兽肉</td>
+<td align="center">顶级兽肉、箭矢*5</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、旅人双手剑</td>
+<td align="center"><strong>时之勇者套装</strong></td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵双手剑</td>
+<td align="center">骑士双手剑、<strong>时之勇者套装</strong></td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵双手剑</td>
+<td align="center">骑士双手剑、<strong>时之勇者套装</strong>、<strong>大鼓隆之剑</strong></td>
+</tr>
+</tbody></table>
+<h3 id="林克（天空之剑）"><a href="#林克（天空之剑）" class="headerlink" title="林克（天空之剑）"></a>林克（天空之剑）</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B(%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%89%91).jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">木桶（卢比、材料）</td>
+<td align="center">箭矢 、箭矢*5</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、旅人之剑/盾</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵之剑/盾</td>
+<td align="center">骑士之剑/盾、<strong>天空之勇者套装</strong></td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵之剑/盾</td>
+<td align="center">骑士之剑/盾、<strong>天空之勇者套装</strong>、<strong>女神的白刃剑</strong></td>
+</tr>
+</tbody></table>
+<h3 id="林克（魔吉拉的面具）"><a href="#林克（魔吉拉的面具）" class="headerlink" title="林克（魔吉拉的面具）"></a>林克（魔吉拉的面具）</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B(%E9%AD%94%E5%90%89%E6%8B%89%E7%9A%84%E9%9D%A2%E5%85%B7).jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">海拉鲁/精力/冰冷/暖暖/酥麻/速速/大剑/铠甲/潜行蘑菇</td>
+<td align="center">毅力蘑菇、生命松露、大生命松露、箭矢*5</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、旅人双手剑</td>
+<td align="center"><strong>鬼神套装</strong></td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵双手剑</td>
+<td align="center">骑士双手剑、<strong>鬼神套装</strong></td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵双手剑</td>
+<td align="center">骑士双手剑、<strong>鬼神套装</strong>、<strong>鬼神大剑</strong></td>
+</tr>
+</tbody></table>
+<h3 id="林克（初代8-Bit）"><a href="#林克（初代8-Bit）" class="headerlink" title="林克（初代8-Bit）"></a>林克（初代8-Bit）</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B%EF%BC%88%E5%88%9D%E4%BB%A38-Bit%EF%BC%89.jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">木桶（卢比、材料）</td>
+<td align="center">炸药桶、箭矢*5</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、旅人之剑/盾</td>
+<td align="center"><strong>初始之勇者套装</strong></td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵之剑/盾</td>
+<td align="center">骑士之剑/盾、<strong>初始之勇者套装</strong></td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵之剑/盾</td>
+<td align="center">骑士之剑/盾、<strong>初始之勇者套装</strong>、<strong>长剑</strong></td>
+</tr>
+</tbody></table>
+<h3 id="林克（大乱斗）-amp-林克（黄昏公主）"><a href="#林克（大乱斗）-amp-林克（黄昏公主）" class="headerlink" title="林克（大乱斗）&amp; 林克（黄昏公主）"></a>林克（大乱斗）&amp; 林克（黄昏公主）</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B%EF%BC%88%E5%A4%A7%E4%B9%B1%E6%96%97%EF%BC%89.jpg"></p>
+<p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B%EF%BC%88%E9%BB%84%E6%98%8F%E5%85%AC%E4%B8%BB%EF%BC%89.jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">苹果、椰子、草莓、橡子、小鸟的树果、冰冷蜜瓜、暖暖草果、酥麻水果、速速莲蓬、大剑香蕉</td>
+<td align="center">生命榴莲、箭矢*5</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、旅人之剑/盾</td>
+<td align="center"><strong>黄昏之勇者套装</strong></td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵之剑/盾</td>
+<td align="center">骑士之剑/盾、<strong>黄昏之勇者套装</strong>、<strong>伊波娜</strong></td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵之剑/盾</td>
+<td align="center">骑士之剑/盾、<strong>黄昏之勇者套装</strong>、<strong>伊波娜</strong></td>
+</tr>
+</tbody></table>
+<h3 id="卡通林克（大乱斗）-amp-卡通林克（风之律动）"><a href="#卡通林克（大乱斗）-amp-卡通林克（风之律动）" class="headerlink" title="卡通林克（大乱斗）&amp; 卡通林克（风之律动）"></a>卡通林克（大乱斗）&amp; 卡通林克（风之律动）</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%8D%A1%E9%80%9A%E6%9E%97%E5%85%8B%EF%BC%88%E5%A4%A7%E4%B9%B1%E6%96%97%EF%BC%89.jpg"></p>
+<p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%8D%A1%E9%80%9A%E6%9E%97%E5%85%8B%EF%BC%88%E9%A3%8E%E4%B9%8B%E5%BE%8B%E5%8A%A8%EF%BC%89.jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">海拉鲁/精力鲈鱼、冰冷/暖暖/酥麻/潜行鳟鱼、大剑/铠甲鲤鱼、大剑/铠甲鲷鱼</td>
+<td align="center">生命鲈鱼/鲑鱼、箭矢*5</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、飞旋镖、旅人之剑</td>
+<td align="center"><strong>风之勇者套装</strong></td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、飞旋镖、士兵之剑</td>
+<td align="center">骑士之剑、<strong>风之勇者套装</strong>、<strong>海风飞旋标</strong></td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、飞旋镖、士兵之剑</td>
+<td align="center">骑士之剑、<strong>风之勇者套装</strong>、<strong>海风飞旋标</strong></td>
+</tr>
+</tbody></table>
+<h3 id="幼年林克（大乱斗）-amp-卡通林克（织梦岛）"><a href="#幼年林克（大乱斗）-amp-卡通林克（织梦岛）" class="headerlink" title="幼年林克（大乱斗）&amp; 卡通林克（织梦岛）"></a>幼年林克（大乱斗）&amp; 卡通林克（织梦岛）</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%B9%BC%E5%B9%B4%E6%9E%97%E5%85%8B%EF%BC%88%E5%A4%A7%E4%B9%B1%E6%96%97%EF%BC%89.jpg"></p>
+<p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%8D%A1%E9%80%9A%E6%9E%97%E5%85%8B%EF%BC%88%E7%BB%87%E6%A2%A6%E5%B2%9B%EF%BC%89.png"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">海拉鲁/精力鲈鱼、冰冷/暖暖/酥麻/潜行鳟鱼、大剑/铠甲鲤鱼、大剑/铠甲鲷鱼、普通/高级禽肉、普通/高级兽肉</td>
+<td align="center">生命鲈鱼/鲑鱼、箭矢*5</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、旅人之枪/剑/双手剑</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵之枪/剑/双手剑</td>
+<td align="center">骑士之枪/剑/双手剑</td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5、士兵之枪/剑/双手剑</td>
+<td align="center">士兵之枪/剑/双手剑、王族之枪/剑/双手剑</td>
+</tr>
+</tbody></table>
+<h3 id="塞尔达"><a href="#塞尔达" class="headerlink" title="塞尔达"></a>塞尔达</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%A1%9E%E5%B0%94%E8%BE%BE.jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">海拉鲁/精力/冰冷/暖暖/酥麻香草、速速紫罗兰/胡萝卜、大剑/铠甲/潜行草、铠甲南瓜</td>
+<td align="center">生命小萝卜/大萝卜、毅力胡萝卜、静谧公主</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">琥珀、蛋白石、黄玉、蓝宝石、红宝石、钻石、星星碎片、夜光石、旅人/士兵盾</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">琥珀、蛋白石、黄玉、蓝宝石、红宝石、钻石、星星碎片、夜光石、士兵盾</td>
+<td align="center">骑士盾</td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">琥珀、蛋白石、黄玉、蓝宝石、红宝石、钻石、星星碎片、夜光石、士兵盾</td>
+<td align="center">骑士盾、王族盾、太阳盾</td>
+</tr>
+</tbody></table>
+<h3 id="塞尔达-大乱斗"><a href="#塞尔达-大乱斗" class="headerlink" title="塞尔达(大乱斗)"></a>塞尔达(大乱斗)</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%A1%9E%E5%B0%94%E8%BE%BE(%E5%A4%A7%E4%B9%B1%E6%96%97).jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">海拉鲁/精力/冰冷/暖暖/酥麻香草、速速紫罗兰/胡萝卜、大剑/铠甲/潜行草、铠甲南瓜</td>
+<td align="center">生命小萝卜/大萝卜、毅力胡萝卜、静谧公主</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">琥珀、蛋白石、黄玉、蓝宝石、红宝石、钻石、星星碎片、夜光石、旅人之弓</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">琥珀、蛋白石、黄玉、蓝宝石、红宝石、钻石、星星碎片、夜光石、士兵之弓</td>
+<td align="center">骑士之弓</td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">琥珀、蛋白石、黄玉、蓝宝石、红宝石、钻石、星星碎片、夜光石、士兵之弓</td>
+<td align="center">骑士之弓、王族之弓、<strong>黄昏之光弓</strong></td>
+</tr>
+</tbody></table>
+<h3 id="卡通塞尔达（风之律动）"><a href="#卡通塞尔达（风之律动）" class="headerlink" title="卡通塞尔达（风之律动）"></a>卡通塞尔达（风之律动）</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%A1%9E%E5%B0%94%E8%BE%BE(%E9%A3%8E%E4%B9%8B%E5%BE%8B%E5%8A%A8).jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">海拉鲁/精力/冰冷/暖暖/酥麻香草、速速紫罗兰/胡萝卜、大剑/铠甲/潜行草、铠甲南瓜</td>
+<td align="center">生命小萝卜/大萝卜、毅力胡萝卜、静谧公主</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">琥珀、蛋白石、黄玉、蓝宝石、红宝石、钻石、星星碎片、夜光石、旅人/士兵盾</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">琥珀、蛋白石、黄玉、蓝宝石、红宝石、钻石、星星碎片、夜光石、士兵盾</td>
+<td align="center">骑士盾</td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">琥珀、蛋白石、黄玉、蓝宝石、红宝石、钻石、星星碎片、夜光石、士兵盾</td>
+<td align="center">骑士盾、王族盾、勇者盾</td>
+</tr>
+</tbody></table>
+<h3 id="守护者"><a href="#守护者" class="headerlink" title="守护者"></a>守护者</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%AE%88%E6%8A%A4%E8%80%85.jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">铁箱（卢比、材料）</td>
+<td align="center">铁箱（卢比、材料）</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">生锈的盾/枪/剑/双手剑/、守护者之盾/枪/斧/匕首</td>
+<td align="center">古代核心、巨大古代核心</td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">守护者之盾/枪/斧/匕首</td>
+<td align="center">古代兵装‧箭、古代兵装‧箭*3、古代核心、巨大古代核心</td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">守护者之盾/枪/斧/匕首（普通、+、++）</td>
+<td align="center">古代兵装‧箭、古代兵装‧箭*3、古代核心、巨大古代核心</td>
+</tr>
+</tbody></table>
+<h3 id="波克布林"><a href="#波克布林" class="headerlink" title="波克布林"></a>波克布林</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%B3%A2%E5%85%8B%E5%B8%83%E6%9E%97.jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">普通/高级兽肉</td>
+<td align="center">顶级兽肉、波克布林的肝脏</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">波克弓/盾/枪/棒/棍、尖刺波克弓/盾/枪/棒/棍</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">尖刺波克弓/盾/枪/棒/棍</td>
+<td align="center">龙骨波克弓/盾/枪/棒/棍</td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">尖刺波克弓/盾/枪/棒/棍</td>
+<td align="center">龙骨波克弓/盾/枪/棒/棍</td>
+</tr>
+</tbody></table>
+<h3 id="米法"><a href="#米法" class="headerlink" title="米法"></a>米法</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E7%B1%B3%E6%B3%95.jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">海拉鲁/精力鲈鱼、冰冷/暖暖/酥麻/潜行鳟鱼、大剑/铠甲鲤鱼、大剑/铠甲鲷鱼</td>
+<td align="center">生命鲈鱼/鲑鱼</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">旅人之枪</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">卓拉之枪</td>
+<td align="center">钻石、士兵之枪</td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">卓拉之枪</td>
+<td align="center">钻石、士兵之枪、<strong>神兽兵装·露塔</strong></td>
+</tr>
+</tbody></table>
+<h3 id="力巴尔"><a href="#力巴尔" class="headerlink" title="力巴尔"></a>力巴尔</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%8A%9B%E5%B7%B4%E5%B0%94.jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">苹果、椰子、草莓、橡子、小鸟的树果、冰冷蜜瓜、暖暖草果、酥麻水果、速速莲蓬、大剑香蕉</td>
+<td align="center">生命榴莲、箭矢*5</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">旅人之弓</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">飞燕弓</td>
+<td align="center">钻石、士兵弓</td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">飞燕弓</td>
+<td align="center">钻石、游隼弓、<strong>神兽兵装·梅德</strong></td>
+</tr>
+</tbody></table>
+<h3 id="乌尔波札"><a href="#乌尔波札" class="headerlink" title="乌尔波札"></a>乌尔波札</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E4%B9%8C%E5%B0%94%E6%B3%A2%E6%9C%AD.jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">普通/高级兽肉、普通/高级禽肉</td>
+<td align="center">顶级兽肉/禽肉、电箭*5</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">旅人之剑/盾</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">格鲁德匕首/盾</td>
+<td align="center">钻石、士兵之剑/盾</td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">格鲁德匕首/盾</td>
+<td align="center">钻石、月光匕首、太阳盾、<strong>神兽兵装·娜波力斯</strong></td>
+</tr>
+</tbody></table>
+<h3 id="达尔克尔"><a href="#达尔克尔" class="headerlink" title="达尔克尔"></a>达尔克尔</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E8%BE%BE%E5%B0%94%E5%85%8B%E5%B0%94.jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">岩盐、打火石、琥珀</td>
+<td align="center">蛋白石、黄玉、蓝宝石、红宝石</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">旅人双手剑</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">劈石剑</td>
+<td align="center">钻石、骑士双手剑</td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">劈石剑</td>
+<td align="center">钻石、碎岩剑、<strong>神兽兵装·鲁达尼亚</strong></td>
+</tr>
+</tbody></table>
+<h3 id="加侬多夫-大乱斗"><a href="#加侬多夫-大乱斗" class="headerlink" title="加侬多夫(大乱斗)"></a>加侬多夫(大乱斗)</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%8A%A0%E4%BE%AC%E5%A4%9A%E5%A4%AB(%E5%A4%A7%E4%B9%B1%E6%96%97).jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">木桶（卢比、材料）</td>
+<td align="center">炸药桶、波克布林的肝脏</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">琥珀、蛋白石、黄玉、蓝宝石、红宝石、钻石、星星碎片、夜光石、旅人双手剑</td>
+<td align="center">无</td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">琥珀、蛋白石、黄玉、蓝宝石、红宝石、钻石、星星碎片、夜光石、士兵/格鲁德双手剑、莫力布林的肝脏、蜥蜴战士的尾巴</td>
+<td align="center">骑士双手剑</td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">琥珀、蛋白石、黄玉、蓝宝石、红宝石、钻石、星星碎片、夜光石、士兵/格鲁德双手剑、莱尼尔的肝脏</td>
+<td align="center">骑士双手剑、<strong>六贤者之剑</strong></td>
+</tr>
+</tbody></table>
+<h3 id="希克-大乱斗"><a href="#希克-大乱斗" class="headerlink" title="希克(大乱斗)"></a>希克(大乱斗)</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E5%B8%8C%E5%85%8B(%E5%A4%A7%E4%B9%B1%E6%96%97).jpg"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">普通</th>
+<th align="center">稀有</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础素材</td>
+<td align="center">海拉鲁/精力/冰冷/暖暖/酥麻/速速/大剑/铠甲/潜行蘑菇</td>
+<td align="center">毅力蘑菇、生命松露、大生命松露、箭矢*5</td>
+</tr>
+<tr>
+<td>第一座神庙通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5</td>
+<td align="center">护心盾、戒心小刀、<strong>希克的面罩</strong></td>
+</tr>
+<tr>
+<td>拿到滑翔伞后</td>
+<td align="center">火/冰/电/炸弹箭矢*5</td>
+<td align="center">护心盾、戒心小刀、戒心长刀、<strong>希克的面罩</strong></td>
+</tr>
+<tr>
+<td>任一神兽通关后</td>
+<td align="center">火/冰/电/炸弹箭矢*5</td>
+<td align="center">护心盾、戒心小刀、戒心长刀、一心之弓、蜿蜒之枪、静心大剑、<strong>希克的面罩</strong></td>
+</tr>
+</tbody></table>
+<h3 id="林克狼"><a href="#林克狼" class="headerlink" title="林克狼"></a>林克狼</h3><p><img src="/2019/07/06/%E3%80%8A%E5%A1%9E%E5%B0%94%E8%BE%BE%E4%BC%A0%E8%AF%B4%EF%BC%9A%E6%97%B7%E9%87%8E%E4%B9%8B%E6%81%AF%E3%80%8B%E5%9F%BA%E7%A1%80%E6%89%8B%E5%86%8C/%E6%9E%97%E5%85%8B%E7%8B%BC.jpg"></p>
+<p>使用后召唤林克狼一起冒险，HP预设3颗心，依据 [WiiU]黄昏公主HD 游戏中的『狼之试炼』记录，决定林克狼的HP多寡，最多20颗心。</p>
+<p>进入各村庄、神庙、神兽、海拉鲁城后，狼林克会消失，但再刷amiibo可重新召唤。</p>
+<p>不幸狼林克HP为0被击倒后，当天将无法再召唤，需要隔天才能重新召唤，因为狼林克的防御力就只有1、且无法提升。因此就算有20心也一样要小心被怪围殴。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%B8%B8%E6%88%8F%E6%94%BB%E7%95%A5/" rel="tag"># 游戏攻略</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2018/07/07/Test-Article/" rel="prev" title="Hello Blog">
+      <i class="fa fa-chevron-left"></i> Hello Blog
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.</span> <span class="nav-text">1、基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E6%9D%90%E6%96%99"><span class="nav-number">2.</span> <span class="nav-text">2、材料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%90%E6%96%99%E5%89%8D%E7%BC%80%E8%AF%B4%E6%98%8E"><span class="nav-number">2.1.</span> <span class="nav-text">材料前缀说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%83%B9%E9%A5%AA%E6%9A%B4%E5%87%BB"><span class="nav-number">2.2.</span> <span class="nav-text">烹饪暴击</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A3%9F%E7%89%A9-%E8%8D%AF%E5%89%82%E7%AD%89%E7%BA%A7%E8%A1%A8"><span class="nav-number">2.3.</span> <span class="nav-text">食物&#x2F;药剂等级表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%99%AE%E9%80%9A%E6%9D%90%E6%96%99"><span class="nav-number">2.4.</span> <span class="nav-text">普通材料</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%90%E6%96%99%E7%B1%BB"><span class="nav-number">2.4.1.</span> <span class="nav-text">佐料类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Buff%E7%B1%BB"><span class="nav-number">2.4.2.</span> <span class="nav-text">Buff类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%9F%E5%91%BD%E7%B1%BB"><span class="nav-number">2.4.3.</span> <span class="nav-text">生命类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B2%BE%E5%8A%9B%E7%B1%BB"><span class="nav-number">2.4.4.</span> <span class="nav-text">精力类</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%AA%E7%89%A9%E6%9D%90%E6%96%99"><span class="nav-number">2.5.</span> <span class="nav-text">怪物材料</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%B9%E6%AE%8A%E6%9D%90%E6%96%99"><span class="nav-number">2.6.</span> <span class="nav-text">特殊材料</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E5%B8%B8%E7%94%A8%E9%A3%9F%E8%B0%B1"><span class="nav-number">3.</span> <span class="nav-text">3、常用食谱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81Amiibo"><span class="nav-number">4.</span> <span class="nav-text">4、Amiibo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%97%E5%85%8B%EF%BC%88%E9%AA%91%E9%A9%AC%EF%BC%89"><span class="nav-number">4.1.</span> <span class="nav-text">林克（骑马）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%97%E5%85%8B%EF%BC%88%E5%B0%84%E7%AE%AD%EF%BC%89"><span class="nav-number">4.2.</span> <span class="nav-text">林克（射箭）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%97%E5%85%8B%EF%BC%88%E6%97%B6%E4%B9%8B%E7%AC%9B%EF%BC%89"><span class="nav-number">4.3.</span> <span class="nav-text">林克（时之笛）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%97%E5%85%8B%EF%BC%88%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%89%91%EF%BC%89"><span class="nav-number">4.4.</span> <span class="nav-text">林克（天空之剑）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%97%E5%85%8B%EF%BC%88%E9%AD%94%E5%90%89%E6%8B%89%E7%9A%84%E9%9D%A2%E5%85%B7%EF%BC%89"><span class="nav-number">4.5.</span> <span class="nav-text">林克（魔吉拉的面具）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%97%E5%85%8B%EF%BC%88%E5%88%9D%E4%BB%A38-Bit%EF%BC%89"><span class="nav-number">4.6.</span> <span class="nav-text">林克（初代8-Bit）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%97%E5%85%8B%EF%BC%88%E5%A4%A7%E4%B9%B1%E6%96%97%EF%BC%89-amp-%E6%9E%97%E5%85%8B%EF%BC%88%E9%BB%84%E6%98%8F%E5%85%AC%E4%B8%BB%EF%BC%89"><span class="nav-number">4.7.</span> <span class="nav-text">林克（大乱斗）&amp; 林克（黄昏公主）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%A1%E9%80%9A%E6%9E%97%E5%85%8B%EF%BC%88%E5%A4%A7%E4%B9%B1%E6%96%97%EF%BC%89-amp-%E5%8D%A1%E9%80%9A%E6%9E%97%E5%85%8B%EF%BC%88%E9%A3%8E%E4%B9%8B%E5%BE%8B%E5%8A%A8%EF%BC%89"><span class="nav-number">4.8.</span> <span class="nav-text">卡通林克（大乱斗）&amp; 卡通林克（风之律动）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B9%BC%E5%B9%B4%E6%9E%97%E5%85%8B%EF%BC%88%E5%A4%A7%E4%B9%B1%E6%96%97%EF%BC%89-amp-%E5%8D%A1%E9%80%9A%E6%9E%97%E5%85%8B%EF%BC%88%E7%BB%87%E6%A2%A6%E5%B2%9B%EF%BC%89"><span class="nav-number">4.9.</span> <span class="nav-text">幼年林克（大乱斗）&amp; 卡通林克（织梦岛）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A1%9E%E5%B0%94%E8%BE%BE"><span class="nav-number">4.10.</span> <span class="nav-text">塞尔达</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A1%9E%E5%B0%94%E8%BE%BE-%E5%A4%A7%E4%B9%B1%E6%96%97"><span class="nav-number">4.11.</span> <span class="nav-text">塞尔达(大乱斗)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%A1%E9%80%9A%E5%A1%9E%E5%B0%94%E8%BE%BE%EF%BC%88%E9%A3%8E%E4%B9%8B%E5%BE%8B%E5%8A%A8%EF%BC%89"><span class="nav-number">4.12.</span> <span class="nav-text">卡通塞尔达（风之律动）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%88%E6%8A%A4%E8%80%85"><span class="nav-number">4.13.</span> <span class="nav-text">守护者</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A2%E5%85%8B%E5%B8%83%E6%9E%97"><span class="nav-number">4.14.</span> <span class="nav-text">波克布林</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%B3%E6%B3%95"><span class="nav-number">4.15.</span> <span class="nav-text">米法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%9B%E5%B7%B4%E5%B0%94"><span class="nav-number">4.16.</span> <span class="nav-text">力巴尔</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B9%8C%E5%B0%94%E6%B3%A2%E6%9C%AD"><span class="nav-number">4.17.</span> <span class="nav-text">乌尔波札</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%BE%E5%B0%94%E5%85%8B%E5%B0%94"><span class="nav-number">4.18.</span> <span class="nav-text">达尔克尔</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%A0%E4%BE%AC%E5%A4%9A%E5%A4%AB-%E5%A4%A7%E4%B9%B1%E6%96%97"><span class="nav-number">4.19.</span> <span class="nav-text">加侬多夫(大乱斗)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%8C%E5%85%8B-%E5%A4%A7%E4%B9%B1%E6%96%97"><span class="nav-number">4.20.</span> <span class="nav-text">希克(大乱斗)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%97%E5%85%8B%E7%8B%BC"><span class="nav-number">4.21.</span> <span class="nav-text">林克狼</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="林苏"
+      src="/images/tx.jpg">
+  <p class="site-author-name" itemprop="name">林苏</p>
+  <div class="site-description" itemprop="description">胡言乱语</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">林苏</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
